@@ -188,7 +188,7 @@ redmine_finalize_database_parameters() {
   DB_ADAPTER=${DB_ADAPTER:-mysql2}
   case ${DB_ADAPTER} in
     mysql2)
-      DB_ENCODING=${DB_ENCODING:-utf8}
+      DB_ENCODING=${DB_ENCODING:-utf8mb4}
       DB_PORT=${DB_PORT:-3306}
       ;;
     postgresql)
